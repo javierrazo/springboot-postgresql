@@ -1,0 +1,28 @@
+ spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://ec2-50-17-231-192.compute-1.amazonaws.com:5432/d125e4ioe8ood
+    username: utscysxgyxqjtl
+    password: 7ef0e162feeb3c94b9a70ecd640f1431bd7b5cc949273b58dd522dab309b2596
+    maxActive: 10
+    maxIdle: 5
+    minIdle: 2
+    initialSize: 5
+    removeAbandoned: true
+
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+    properties:
+      hibernate:
+         dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  thymeleaf:
+    cache: true
+
+
+
